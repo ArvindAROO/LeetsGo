@@ -9,6 +9,8 @@ class Solution:
             else:
                 maps[val] = [nums[index]]
         # print(maps)
+        del nums
+        del sums
         maps = {key:sorted(val) for key, val in maps.items() if len(val) > 1}
         # print(maps)
         try:
