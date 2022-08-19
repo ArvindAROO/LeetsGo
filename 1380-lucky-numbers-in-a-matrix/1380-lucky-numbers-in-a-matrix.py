@@ -1,7 +1,7 @@
 import numpy as np
 class Solution:
-    def luckyNumbers (self, A: List[List[int]]) -> List[int]:
-        A=np.array(A)
+    def luckyNumbers (self, matrix: List[List[int]]) -> List[int]:
+        A=np.array(matrix)
         return list(set(A.max(axis=0)).intersection(A.min(axis=1)))
         # minArray = set(min(i) for i in matrix)
         # maxArray = set()
