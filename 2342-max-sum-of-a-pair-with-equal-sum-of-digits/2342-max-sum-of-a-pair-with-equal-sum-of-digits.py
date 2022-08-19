@@ -11,7 +11,7 @@ class Solution:
         # print(maps)
         del nums
         del sums
-        maps = {key:sorted(val) for key, val in maps.items() if len(val) > 1}
+        maps = {key:sorted(val)[-2:] for key, val in maps.items() if len(val) > 1}
         # print(maps)
         try:
             return max([val[-1] + val[-2] for val in maps.values()])
