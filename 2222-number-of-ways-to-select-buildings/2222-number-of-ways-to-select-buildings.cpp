@@ -1,7 +1,7 @@
 class Solution {
 public:
     long long numberOfWays(string s) {
-        long c0 = 0, c1 = 0, c10 = 0, c01 = 0, c101 = 0, c010 = 0;
+        long long c0 = 0, c1 = 0, c10 = 0, c01 = 0, c101 = 0, c010 = 0;
         for (auto i : s){
             if(i == '0'){
                 c0++;
